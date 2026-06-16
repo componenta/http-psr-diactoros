@@ -1,0 +1,25 @@
+{
+    "name": "componenta/http-psr-diactoros",
+    "description": "Laminas Diactoros PSR-7 and PSR-17 integration for Componenta HTTP",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "componenta/config": "^1.0",
+        "laminas/laminas-diactoros": "^3.8",
+        "psr/http-message": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Componenta\\Http\\Psr7\\Diactoros\\": "src/"
+        }
+    },
+    "extra": {
+        "componenta": {
+            "config-providers": [
+                "Componenta\\Http\\Psr7\\Diactoros\\ConfigProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
